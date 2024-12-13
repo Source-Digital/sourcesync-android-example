@@ -9,11 +9,10 @@ android {
 
     defaultConfig {
         applicationId = "com.example.sourcesynctestapp"
-        minSdk = 21
+        minSdk = 24  // Changed to 24 as required by SourceSync SDK
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
     }
 
     buildTypes {
@@ -35,7 +34,8 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.android.exoplayer:exoplayer:2.19.1")
+    implementation("com.github.Source-Digital:sourcesync-android:v0.0.5")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.leanback)
     implementation(libs.glide)

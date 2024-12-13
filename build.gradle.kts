@@ -3,3 +3,5 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
 }
+
+// Remove buildscript and allprojects blocks as they should be in settings.gradle.kts
